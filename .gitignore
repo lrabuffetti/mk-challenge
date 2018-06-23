@@ -1,0 +1,20 @@
+.vscode
+.nvmrc
+
+#Idea
+.idea/
+*.iml
+out
+gen
+target/
+
+node_modules
+npm-debug.log
+
+#MAC files
+.DS_Store
+
+*.zip
+.sts4-cache
+
+package-lock.json

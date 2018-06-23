@@ -1,0 +1,138 @@
+  /* Smartphones (portrait and landscape) ----------- */
+
+  @keyframes hideshow {
+    0% {
+      opacity: 1;
+    }
+    10% {
+      opacity: 1;
+    }
+    15% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .page-background {
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      header.masthead {
+        padding-top: 0;
+        .logo {
+          width: 80px;
+          height: 30px;
+          background-size: 80px 30px;
+        }
+        .page-title {
+          font-size: 24px;
+          line-height: 29px;
+        }
+        .main-text {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+    .modal-dialog,
+    .modal-show {
+      top: 12%;
+      .modal-content {
+        padding: 75px 30px;
+        .close-button-holder {
+          position: relative;
+          .close-button {
+            position: absolute;
+            right: -25px;
+            z-index: 9;
+            font-size: 16px;
+            color: #b73131;
+            font-weight: 900;
+            top: -70px;
+            background-color: transparent;
+          }
+        }
+        div.ml-32 {
+          margin-left: 0;
+        }
+        div.form-check {
+          margin-bottom: 20px;
+        }
+        .offer-text {
+          font-size: 60px
+        }
+        .info-text {
+          font-size: 16px;
+        }
+        .line {
+          width: 105px;
+          border-bottom: 2px solid $grey-line;
+        }
+        .email-input {
+          height: 40px;
+          border: 1px solid #CCCCCC;
+          border-radius: 3px;
+          background-color: #EAEAEA;
+        }
+        .email-input::placeholder {
+          font-size: 14px;
+          font-style: oblique;
+          line-height: 17px;
+        }
+        .email-input:focus {
+          background-color: white;
+        }
+        .privacy-check {
+          height: 16px;
+          width: 16px;
+          border: 1px solid #CCCCCC;
+          border-radius: 2px;
+          background-color: #F2F2F2;
+        }
+        .red-button {
+          margin: 0 auto;
+          float: none;
+          height: 38px;
+          width: 260px;
+          border-radius: 28px;
+        }
+      }
+    }
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .modal-dialog,
+    .modal-show {
+      max-width: 600px;
+      top: 3%;
+      .modal-content {
+        .offer-text {
+          font-size: 50px
+        }
+        .info-text {
+          font-size: 16px;
+        }
+        .line {
+          width: 66px;
+          border-bottom: 2px solid $grey-line;
+        }
+      }
+    }
+  }
+
+  /* Desktops and laptops ----------- */
+
+  @media only screen and (min-width: 1224px) {
+    /* Styles */
+  }
+
+  /* Large screens ----------- */
+
+  @media only screen and (min-width: 1824px) {
+    /* Styles */
+  }
