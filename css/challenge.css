@@ -331,6 +331,10 @@ section h2 {
   top: 30%;
 }
 
+.btn {
+  display: block !important;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @keyframes hideshow {
   0% {
