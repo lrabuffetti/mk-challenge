@@ -446,6 +446,8 @@ section h2 {
     height: 38px;
     width: 260px;
     border-radius: 28px;
+    display: block;
+    text-align: center;
   }
 }
 
