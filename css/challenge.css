@@ -200,6 +200,7 @@ section h2 {
   height: 38px;
   width: 127px;
   text-align: center;
+  display: block;
 }
 
 .modal-dialog .modal-content .red-button .suscribete,
