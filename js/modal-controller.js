@@ -16,17 +16,37 @@
   });
 
   /**
+   * function to pre/post validate the email input
+   * and show the error message
+   */
+  $('#subscriberEmail').focusout(function() {
+    if (isEmail($('input[name=email]').val()) === false) {
+      $('#subscriberEmail').addClass('error-input');
+      $('#email-error-message').show();
+      $('#subscribe-action').attr('disabled', submitButtonStatus());
+    } else {
+      $('#subscriberEmail').removeClass('error-input');
+      $('#email-error-message').hide();
+      $('#subscribe-action').attr('disabled', submitButtonStatus());
+    }
+  });
+
+  /**
    * enable / disable the submit button based on the checkbox for privacy
    */
   $('#privacy-check-id').click(function () {
-    var email = $('input[name=email]').val();
-
-    if (this.checked && isEmail(email)) {
-      $('#subscribe-action').attr('disabled', false);
-    } else {
-      $('#subscribe-action').attr('disabled', true);
-    }
+    $('#subscribe-action').attr('disabled', submitButtonStatus());
   });
+
+  /**
+   * function to enable/disable the submition of the form
+   */
+  function submitButtonStatus() {
+    var checkBoxStatus = document.getElementById('privacy-check-id').checked,
+      emailValid = isEmail($('input[name=email]').val());
+
+    return  !(checkBoxStatus && emailValid);
+  }
 
   /**
    * process the form on submit

@@ -76,6 +76,7 @@
           border: 1px solid #CCCCCC;
           border-radius: 3px;
           background-color: #EAEAEA;
+          width: 100%;
         }
         .email-input::placeholder {
           font-size: 14px;
@@ -120,6 +121,9 @@
         .line {
           width: 66px;
           border-bottom: 2px solid $grey-line;
+        }
+        .email-input {
+          width: 245px;
         }
       }
     }

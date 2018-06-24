@@ -153,6 +153,32 @@ section {
             margin: 10px 0 0 15px;
             padding: 0;
         }
+        .email-input {
+            height: 40px;
+            border: 1px solid $email-grey;
+            border-radius: 3px;
+            background-color: $email-background;
+            width: 305px;
+        }
+        .email-input::placeholder {
+            font-size: 14px;
+            font-style: oblique;
+            line-height: 17px;
+        }
+        .email-input:focus {
+            background-color: white;
+        }
+        .error-input {
+            border: 1px solid $red-button;
+            background-color: white;
+        }
+        .error-message {
+            display: none;
+            color: $error-text-color;
+            font-size: 14px;
+            line-height: 17px;
+            margin: 10px 0;
+        }
         .privicy-policy {
             height: 14px;
             width: 221px;

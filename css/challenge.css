@@ -178,6 +178,42 @@ section h2 {
   padding: 0;
 }
 
+.modal-dialog .modal-content .email-input,
+.modal-show .modal-content .email-input {
+  height: 40px;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  background-color: #EAEAEA;
+  width: 305px;
+}
+
+.modal-dialog .modal-content .email-input::placeholder,
+.modal-show .modal-content .email-input::placeholder {
+  font-size: 14px;
+  font-style: oblique;
+  line-height: 17px;
+}
+
+.modal-dialog .modal-content .email-input:focus,
+.modal-show .modal-content .email-input:focus {
+  background-color: white;
+}
+
+.modal-dialog .modal-content .error-input,
+.modal-show .modal-content .error-input {
+  border: 1px solid #B73131;
+  background-color: white;
+}
+
+.modal-dialog .modal-content .error-message,
+.modal-show .modal-content .error-message {
+  display: none;
+  color: #E34F45;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 10px 0;
+}
+
 .modal-dialog .modal-content .privicy-policy,
 .modal-show .modal-content .privicy-policy {
   height: 14px;
@@ -383,6 +419,7 @@ section h2 {
     border: 1px solid #CCCCCC;
     border-radius: 3px;
     background-color: #EAEAEA;
+    width: 100%;
   }
   .modal-dialog .modal-content .email-input::placeholder,
   .modal-show .modal-content .email-input::placeholder {
@@ -431,6 +468,10 @@ section h2 {
   .modal-show .modal-content .line {
     width: 66px;
     border-bottom: 2px solid #999999;
+  }
+  .modal-dialog .modal-content .email-input,
+  .modal-show .modal-content .email-input {
+    width: 245px;
   }
 }
 
