@@ -1,10 +1,12 @@
+# Making Sense Challenge
+
+Here is the code for the challenge, the final result could be seen on [https://lrabuffetti.github.io/mk-challenge/](https://lrabuffetti.github.io/mk-challenge/)
+
 ## Usage
 
-### Basic Usage
+If you want to clone the repo and run it locally, you can follow the next steps:
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
+git clone https://github.com/lrabuffetti/mk-challenge
 
 After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
